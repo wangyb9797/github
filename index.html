@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>猜词游戏 - Wordle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>猜词游戏</h1>
+    <button id="help-btn" title="帮助">?</button>
+  </header>
+
+  <div id="board" aria-label="游戏面板"></div>
+
+  <div id="message" class="message hidden"></div>
+
+  <div id="keyboard" aria-label="虚拟键盘"></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title">说明</h2>
+      <p id="modal-text"></p>
+      <button id="modal-btn">关闭</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <button id="new-game" class="btn">新游戏</button>
+    <span class="hint">每天一题，或点击「新游戏」随机挑战</span>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
